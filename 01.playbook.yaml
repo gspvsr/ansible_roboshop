@@ -1,6 +1,6 @@
 - name: ping the node
   hosts: mongodb
-  gather_facts: false
+  gather_facts: yes
   tasks:
     - name: pining the server # this is the tasks/ modules/collections
       ansible.builtin.ping:
