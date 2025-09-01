@@ -1,5 +1,5 @@
 - name: Install and run nginx
-  become: yes
+  become: all
   hosts: mongodb
   gather_facts: false
   tasks:
