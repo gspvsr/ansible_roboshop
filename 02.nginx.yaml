@@ -1,6 +1,6 @@
 - name: Install and run nginx
-  become: all
-  hosts: mongodb
+  become: yes
+  hosts: all
   gather_facts: false
   tasks:
     - name: install nginx
