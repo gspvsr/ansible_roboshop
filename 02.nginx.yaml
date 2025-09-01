@@ -1,5 +1,6 @@
 - name: Install and run nginx
   hosts: all
+  become: yes
   gather_facts: false
   tasks:
     - name: install nginx
