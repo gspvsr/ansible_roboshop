@@ -1,0 +1,14 @@
+- name: variables from files
+  hosts: mongodb
+  vars_files:
+   - variables.ymal
+  tasks:
+    - name: print hello world
+      ansible.builtin.debug:
+        msg: "Hello, I am Learning Ansible"
+
+    - name: print variables
+      ansible.builtin.debug:
+        msg: 
+          - "Hello I am Learning {{ COURSE }}"
+          - "Trainer is {{ Trainer }} and Duration is {{ Duration }}"
