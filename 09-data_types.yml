@@ -1,5 +1,5 @@
 - name: ansible variable data types
-  hosts: localhost
+  hosts: web
   vars:
   - AGE: 30
   - Name: "GSP"
