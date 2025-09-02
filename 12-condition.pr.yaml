@@ -1,0 +1,12 @@
+- name: add the user
+  hosts: web
+  tasks:
+    - name: checking the user existis or not
+      ansible.builtin.command: id gsp
+      regiser: output
+      ignore_erros: true
+    
+    - name: adding the user based on above command
+      ansible.builtin.user:
+        name: gsp
+      when: output.rc != 0
