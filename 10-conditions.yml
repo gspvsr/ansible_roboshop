@@ -5,6 +5,7 @@
     # command module is useful when directly ansible modules are not available.
       ansible.builtin.command: id roboshop
       register: output
+      ignore_errors: true
 
     - name: print the command output
       ansible.builtin.debug:
