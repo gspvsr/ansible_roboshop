@@ -1,5 +1,6 @@
 - name: conditions on ansible
   hosts: all
+  become: yes
   tasks:
     - name: creating the user
     # command module is useful when directly ansible modules are not available.
