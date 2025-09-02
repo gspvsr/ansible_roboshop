@@ -1,5 +1,5 @@
 - name: add the user
-  hosts: web
+  hosts: all
   tasks:
   - name: checking the user exists or not
     ansible.builtin.command: id gsp
