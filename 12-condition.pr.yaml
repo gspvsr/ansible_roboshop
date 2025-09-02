@@ -10,3 +10,4 @@
     ansible.builtin.user:
       name: gsp
     when: output.rc != 0
+    become: yes
