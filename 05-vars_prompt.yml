@@ -11,6 +11,6 @@
   tasks:
     - name: displaying the variables
       ansible.builtin.debug:
-        msg: username: {{ USERNAME }}, passwrd: {{ PASSWRD }}
+        msg: "username: {{ USERNAME }}, passwrd: {{ PASSWRD }}""
 
      
